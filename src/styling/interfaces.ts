@@ -7,7 +7,7 @@ interface NumDict {
 }
 export interface ColourTheme extends StringDict {
   mainBackground: string;
-  heading: string;
+  primaryText: string;
 }
 
 export interface SpacingTheme extends NumDict {
@@ -27,14 +27,30 @@ export interface FontFamiliesTheme extends StringDict {
   overpassRegular: string;
   overpassBold: string;
 }
-
-export interface FontSizesTheme extends NumDict {
-  title: number;
-  heading: number;
-  subheading: number;
-  body: number;
-  caption: number;
+export interface TextStylesTheme {
+  title: {
+    fontSize: number;
+    fontFamily: string;
+  };
+  heading: {
+    fontSize: number;
+    fontFamily: string;
+  };
+  subheading: {
+    fontSize: number;
+    fontFamily: string;
+  };
+  body: {
+    fontSize: number;
+    fontFamily: string;
+  };
+  caption: {
+    fontSize: number;
+    fontFamily: string;
+  };
 }
+
+export type TextType = "title" | "heading" | "subheading" | "body" | "caption";
 
 export interface Theme {
   id: string;
@@ -42,5 +58,5 @@ export interface Theme {
   spacing: SpacingTheme;
   breakpoints: BreakpointsTheme;
   fontFamilies: FontFamiliesTheme;
-  fontSizes: FontSizesTheme;
+  textStyles: TextStylesTheme;
 }

@@ -1,7 +1,6 @@
 import { createTheme } from "@shopify/restyle";
 
-import { fontFamilies } from "./typography/font-families";
-
+import { FONT_FAMILIES } from "./typography/font-families";
 import {
   Theme,
   ColourTheme,
@@ -9,19 +8,19 @@ import {
   BreakpointsTheme,
 } from "./interfaces";
 import { PALETTE } from "./palette";
-import { fontSizes } from "./typography/font-sizes";
+import { TEXT_STYLES } from "./typography/text-styles";
 
 export const LIGHT_ID = "lightTheme";
 export const DARK_ID = "darkTheme";
 
 const DEFAULT_DARK_COLOURS: ColourTheme = {
   mainBackground: PALETTE.green.deep,
-  heading: PALETTE.green.pale,
+  primaryText: PALETTE.green.pale,
 };
 
-const DEFAULT_LIGHT_COLOURS = {
-  mainBackground: PALETTE.green.pale,
-  heading: PALETTE.green.dark,
+const DEFAULT_LIGHT_COLOURS: ColourTheme = {
+  mainBackground: PALETTE.monochrome.white,
+  primaryText: PALETTE.green.dark,
 };
 
 const DEFAULT_SPACING: SpacingTheme = {
@@ -40,8 +39,8 @@ const DARK_THEME: Theme = {
   colors: DEFAULT_DARK_COLOURS,
   spacing: DEFAULT_SPACING,
   breakpoints: DEFAULT_BREAKPOINTS,
-  fontFamilies: fontFamilies,
-  fontSizes: fontSizes,
+  fontFamilies: FONT_FAMILIES,
+  textStyles: TEXT_STYLES,
 };
 
 const LIGHT_THEME: Theme = {
