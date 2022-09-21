@@ -6,12 +6,7 @@ import React, {
   useContext,
 } from "react";
 
-import {
-  DEFAULT_LIGHT_THEME,
-  DEFAULT_DARK_THEME,
-  LIGHT_ID,
-  DARK_ID,
-} from "./theme";
+import { DEFAULT_LIGHT_THEME, DEFAULT_DARK_THEME, LIGHT_ID } from "./theme";
 import { Theme } from "./interfaces";
 
 interface ContextProviderValue {

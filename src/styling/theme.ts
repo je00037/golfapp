@@ -1,4 +1,11 @@
-import { Theme, ColourTheme, SpacingTheme } from "./interfaces";
+import { createTheme } from "@shopify/restyle";
+
+import {
+  Theme,
+  ColourTheme,
+  SpacingTheme,
+  BreakpointsTheme,
+} from "./interfaces";
 import { PALETTE } from "./palette";
 
 export const LIGHT_ID = "lightTheme";
@@ -30,14 +37,24 @@ const DEFAULT_SPACING: SpacingTheme = {
   double: 32,
 };
 
-export const DEFAULT_LIGHT_THEME: Theme = {
-  id: LIGHT_ID,
-  colours: DEFAULT_LIGHT_COLOURS,
-  spacing: DEFAULT_SPACING,
+const DEFAULT_BREAKPOINTS: BreakpointsTheme = {
+  phone: 0,
+  tablet: 768,
 };
 
-export const DEFAULT_DARK_THEME: Theme = {
-  id: DARK_ID,
-  colours: DEFAULT_DARK_COLOURS,
+const LIGHT_THEME: Theme = {
+  id: LIGHT_ID,
+  colors: DEFAULT_LIGHT_COLOURS,
   spacing: DEFAULT_SPACING,
+  breakpoints: DEFAULT_BREAKPOINTS,
 };
+
+const DARK_THEME: Theme = {
+  id: DARK_ID,
+  colors: DEFAULT_DARK_COLOURS,
+  spacing: DEFAULT_SPACING,
+  breakpoints: DEFAULT_BREAKPOINTS,
+};
+
+export const DEFAULT_LIGHT_THEME = createTheme(LIGHT_THEME);
+export const DEFAULT_DARK_THEME = createTheme(DARK_THEME);

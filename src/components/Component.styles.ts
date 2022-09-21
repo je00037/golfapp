@@ -5,12 +5,12 @@ export const createStyles = (theme: Theme) => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: theme.colours.mainBackground,
+      backgroundColor: theme.colors.mainBackground,
       alignItems: "center",
       justifyContent: "center",
     },
     text: {
-      color: theme.colours.heading,
+      color: theme.colors.heading,
       marginBottom: theme.spacing.double,
     },
   });

@@ -1,16 +1,29 @@
-export interface ColourTheme {
+interface StringDict {
+  [key: string]: string;
+}
+
+interface NumDict {
+  [key: string]: number;
+}
+export interface ColourTheme extends StringDict {
   mainBackground: string;
   heading: string;
 }
 
-export interface SpacingTheme {
+export interface SpacingTheme extends NumDict {
   half: number;
   base: number;
   double: number;
 }
 
+export interface BreakpointsTheme extends NumDict {
+  phone: number;
+  tablet: number;
+}
+
 export interface Theme {
   id: string;
-  colours: ColourTheme;
+  colors: ColourTheme;
   spacing: SpacingTheme;
+  breakpoints: BreakpointsTheme;
 }
