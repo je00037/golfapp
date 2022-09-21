@@ -10,11 +10,12 @@ export const MainContent: FC = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Golf App</Text>
       <Text style={styles.text}>
         Open up Joe.js to start working on your app!
       </Text>
       <Pressable onPress={toggleTheme}>
-        <Text>Change Theme</Text>
+        <Text style={styles.text}>Change Theme</Text>
       </Pressable>
     </View>
   );

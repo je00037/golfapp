@@ -10,8 +10,15 @@ export const createStyles = (theme: Theme) => {
       justifyContent: "center",
     },
     text: {
+      fontFamily: theme.fontFamilies.overpassRegular,
       color: theme.colors.heading,
-      marginBottom: theme.spacing.double,
+      marginVertical: theme.spacing.double,
+      fontSize: theme.fontSizes.body,
+    },
+    title: {
+      fontFamily: theme.fontFamilies.bungee,
+      color: theme.colors.heading,
+      fontSize: theme.fontSizes.title,
     },
   });
 

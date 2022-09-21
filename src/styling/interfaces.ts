@@ -21,9 +21,26 @@ export interface BreakpointsTheme extends NumDict {
   tablet: number;
 }
 
+export interface FontFamiliesTheme extends StringDict {
+  bungee: string;
+  overpassThin: string;
+  overpassRegular: string;
+  overpassBold: string;
+}
+
+export interface FontSizesTheme extends NumDict {
+  title: number;
+  heading: number;
+  subheading: number;
+  body: number;
+  caption: number;
+}
+
 export interface Theme {
   id: string;
   colors: ColourTheme;
   spacing: SpacingTheme;
   breakpoints: BreakpointsTheme;
+  fontFamilies: FontFamiliesTheme;
+  fontSizes: FontSizesTheme;
 }

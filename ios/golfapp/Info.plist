@@ -49,7 +49,14 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-  <key>UIStatusBarStyle</key>
-  <string>UIStatusBarStyleDefault</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Bungee-Regular.ttf</string>
+		<string>Overpass-Bold.ttf</string>
+		<string>Overpass-Regular.ttf</string>
+		<string>Overpass-Thin.ttf</string>
+	</array>
 </dict>
 </plist>
