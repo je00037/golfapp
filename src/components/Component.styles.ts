@@ -5,7 +5,6 @@ export const createStyles = (theme: Theme) => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: theme.colors.mainBackground,
       alignItems: "center",
       justifyContent: "space-around",
     },
