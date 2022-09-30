@@ -1,6 +1,6 @@
 export const PALETTE = {
   monochrome: {
-    white: "#F2F0F0",
+    white: "#EFFFEB",
   },
   green: {
     deep: "#1C1642",

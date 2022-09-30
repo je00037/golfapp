@@ -1,8 +1,7 @@
-import React, { FC } from "react";
-import { Pressable, View } from "react-native";
+import React, { FC, ReactNode } from "react";
 import { useThemedStyles } from "../hooks/useThemedStyles";
 import { useTheme } from "../styling/context";
-import { createStyles } from "./Component.styles";
+import { createStyles } from "./Screen.styles";
 import Animated, {
   interpolateColor,
   useAnimatedStyle,
@@ -14,10 +13,15 @@ import {
   DEFAULT_LIGHT_THEME,
   LIGHT_ID,
 } from "../styling/theme";
-import { Text } from "./Text";
+import { Text } from "../components/Text";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-export const MainContent: FC = () => {
-  const { theme: currentTheme, toggleTheme } = useTheme();
+interface ScreenProps {
+  children?: ReactNode;
+}
+
+export const Screen: FC<ScreenProps> = ({ children }) => {
+  const { theme: currentTheme } = useTheme();
   const styles = useThemedStyles(createStyles);
 
   const progress = useDerivedValue(() => {
@@ -40,11 +44,15 @@ export const MainContent: FC = () => {
 
   return (
     <Animated.View style={[styles.container, animatedStyle]}>
-      <Text type="title">PUTT PAL</Text>
-      <Text type="heading">Awesome app to improve your putting.</Text>
-      <Pressable onPress={toggleTheme}>
-        <Text type="body">Change Theme</Text>
-      </Pressable>
+      <SafeAreaView
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {children}
+      </SafeAreaView>
     </Animated.View>
   );
 };

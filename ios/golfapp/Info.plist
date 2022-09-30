@@ -53,6 +53,7 @@
 	<string>UIStatusBarStyleDefault</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Ionicons.ttf</string>
 		<string>Bungee-Regular.ttf</string>
 		<string>Overpass-Bold.ttf</string>
 		<string>Overpass-Regular.ttf</string>

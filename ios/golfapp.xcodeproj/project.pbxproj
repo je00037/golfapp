@@ -18,6 +18,7 @@
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		B3DFE23ECE864F7588B0E34B /* Overpass-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C94E6A7BB2E4B90BDF360B2 /* Overpass-Thin.ttf */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		EE39BC6128E73C8300E5D9D8 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE39BC6028E73C8300E5D9D8 /* Ionicons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,16 +29,17 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = golfapp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = golfapp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = golfapp/main.m; sourceTree = "<group>"; };
-		15F9A67D0A494442973450EF /* Overpass-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Bold.ttf"; path = "../src/assets/fonts/Overpass-Bold.ttf"; sourceTree = "<group>"; };
-		3C59F85C574B4EAD9C7AF50F /* Overpass-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Regular.ttf"; path = "../src/assets/fonts/Overpass-Regular.ttf"; sourceTree = "<group>"; };
+		15F9A67D0A494442973450EF /* Overpass-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Bold.ttf"; path = "../src/assets/fonts/Overpass-Bold.ttf"; sourceTree = "<group>"; };
+		3C59F85C574B4EAD9C7AF50F /* Overpass-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Regular.ttf"; path = "../src/assets/fonts/Overpass-Regular.ttf"; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-golfapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-golfapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C94E6A7BB2E4B90BDF360B2 /* Overpass-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Thin.ttf"; path = "../src/assets/fonts/Overpass-Thin.ttf"; sourceTree = "<group>"; };
+		5C94E6A7BB2E4B90BDF360B2 /* Overpass-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Thin.ttf"; path = "../src/assets/fonts/Overpass-Thin.ttf"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-golfapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-golfapp.debug.xcconfig"; path = "Target Support Files/Pods-golfapp/Pods-golfapp.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-golfapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-golfapp.release.xcconfig"; path = "Target Support Files/Pods-golfapp/Pods-golfapp.release.xcconfig"; sourceTree = "<group>"; };
-		8EAFF71AF9AC4023A3E6D2E4 /* Bungee-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Bungee-Regular.ttf"; path = "../src/assets/fonts/Bungee-Regular.ttf"; sourceTree = "<group>"; };
+		8EAFF71AF9AC4023A3E6D2E4 /* Bungee-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Bungee-Regular.ttf"; path = "../src/assets/fonts/Bungee-Regular.ttf"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = golfapp/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE39BC6028E73C8300E5D9D8 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-golfapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				EE39BC5F28E73BE300E5D9D8 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* golfapp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -117,7 +120,6 @@
 				5C94E6A7BB2E4B90BDF360B2 /* Overpass-Thin.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		92DBD88DE9BF7D494EA9DA96 /* golfapp */ = {
@@ -152,6 +154,14 @@
 				92DBD88DE9BF7D494EA9DA96 /* golfapp */,
 			);
 			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		EE39BC5F28E73BE300E5D9D8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EE39BC6028E73C8300E5D9D8 /* Ionicons.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +226,7 @@
 			files = (
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				EE39BC6128E73C8300E5D9D8 /* Ionicons.ttf in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 				6A7FE46902FA46528AEC8435 /* Bungee-Regular.ttf in Resources */,
 				807EC1435FE54EEEBCD57A1A /* Overpass-Bold.ttf in Resources */,
